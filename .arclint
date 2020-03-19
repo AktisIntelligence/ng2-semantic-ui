@@ -1,0 +1,16 @@
+{
+    "linters": {
+        "javascript": {
+            "type": "jshint",
+            "include": "(\\.js$)"
+        },
+        "spelling": {
+            "type": "spelling"
+        },
+        "json": {
+            "type": "json",
+            "include": "(\\.json$)",
+            "exclude": "(.*20170726.*.json$)"
+        }
+    }
+}
