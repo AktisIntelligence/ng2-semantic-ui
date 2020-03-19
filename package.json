@@ -1,6 +1,6 @@
 {
-  "name": "ng2-semantic-ui",
-  "version": "0.10.0-alpha.6",
+  "name": "aktis-ng2-semantic-ui",
+  "version": "0.10.0-alpha.9",
   "description": "Angular Semantic UI Components",
   "repository": {
     "type": "git",
@@ -40,7 +40,9 @@
     "build:prod": "npm run lib:build:prod && npm run demo:build:prod",
     "prepare": "npm run lib:compile:prod"
   },
-  "dependencies": {},
+  "dependencies": {
+    "aktis-ng2-semantic-ui": "^0.10.0-alpha.9"
+  },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.900.1",
     "@angular-devkit/build-ng-packagr": "^0.900.1",

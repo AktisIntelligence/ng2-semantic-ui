@@ -1,6 +1,6 @@
 import { Component, Input } from "@angular/core";
 import { ApiDefinition } from "../../../components/api/api.component";
-import { SuiPopupConfig } from "ng2-semantic-ui";
+import { SuiPopupConfig } from "aktis-ng2-semantic-ui";
 
 const exampleStandardTemplate = `
 <button class="ui green icon button" suiPopup popupHeader="Example" popupText="This is an example popup">
@@ -54,11 +54,11 @@ const exampleWidthTemplate = `
 </div>
 </ng-template>
 
-<i class="circular heart icon link" suiPopup popupWidth="wide" 
-popupText="Hello. This is a wide pop-up which allows for lots of content with additional space. 
+<i class="circular heart icon link" suiPopup popupWidth="wide"
+popupText="Hello. This is a wide pop-up which allows for lots of content with additional space.
 You can fit a lot of words here and the paragraphs will be pretty wide."></i>
-<i class="circular heart icon link" suiPopup popupWidth="very wide" 
-popupText="Hello. This is a very wide pop-up which allows for lots of content with additional space. 
+<i class="circular heart icon link" suiPopup popupWidth="very wide"
+popupText="Hello. This is a very wide pop-up which allows for lots of content with additional space.
 You can fit a lot of words here and the paragraphs will be pretty wide."></i>
 <br/>
 <br/>
@@ -216,7 +216,7 @@ export class PopupPage {
 `;
 
     public manualPopupCode:string = `
-import {IPopup} from "ng2-semantic-ui";
+import {IPopup} from "aktis-ng2-semantic-ui";
 
 @Component({})
 export class MyComponent {
@@ -231,7 +231,7 @@ export class MyComponent {
 `;
 
     public globalConfigCode:string = `
-import {SuiPopupConfig} from "ng2-semantic-ui";
+import {SuiPopupConfig} from "aktis-ng2-semantic-ui";
 
 @Component({})
 export class MyComponent {

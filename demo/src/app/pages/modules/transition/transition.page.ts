@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { SuiTransition, Transition, TransitionDirection, TransitionController } from "ng2-semantic-ui";
+import { SuiTransition, Transition, TransitionDirection, TransitionController } from "aktis-ng2-semantic-ui";
 import { ApiDefinition } from "../../../components/api/api.component";
 
 const exampleStandardTemplate = `
@@ -32,7 +32,7 @@ export class TransitionPage {
     ];
 
     public transitionControllerCode:string = `
-import {TransitionController} from "ng2-semantic-ui";
+import {TransitionController} from "aktis-ng2-semantic-ui";
 
 @Component({})
 export class MyComponent {
@@ -47,12 +47,12 @@ export class MyComponent {
 `;
 
     public transitionExampleCode:string = `
-import {TransitionController, Transition, TransitionDirection} from "ng2-semantic-ui";
+import {TransitionController, Transition, TransitionDirection} from "aktis-ng2-semantic-ui";
 
 @Component({})
 export class MyComponent {
     public transitionController = new TransitionController();
-    
+
     public animate(transitionName:string = "scale") {
         this.transitionController.animate(
             new Transition(transitionName, 500, TransitionDirection.In, () => console.log("Completed transition.")));
@@ -90,7 +90,7 @@ this.ctrl.clearQueue();
 `;
 
     public advancedExampleCode:string = `
-import {SuiTransition, TransitionController, Transition} from "ng2-semantic-ui";
+import {SuiTransition, TransitionController, Transition} from "aktis-ng2-semantic-ui";
 
 @Component({})
 export class MyComponent extends SuiTransition {

@@ -3,7 +3,7 @@ import { ApiDefinition } from "../../../components/api/api.component";
 import {
     SuiModalService, ModalTemplate, TemplateModalConfig, ComponentModalConfig,
     ModalSize, SuiModal
-} from "ng2-semantic-ui";
+} from "aktis-ng2-semantic-ui";
 import { AlertModal } from "../../../modals/alert.modal";
 
 const exampleTemplateModalTemplate = `
@@ -29,9 +29,9 @@ export const exampleTemplateTemplate = exampleTemplateModalTemplate + `
 `;
 
 const exampleComponentModalTemplate = `
-<div class="header">{{ modal.context.title }}</div>
+<div class="header"></div>
 <div class="content">
-    <p>{{ modal.context.question }}</p>
+    <p></p>
 </div>
 <div class="actions">
     <button class="ui red button" (click)="modal.deny(undefined)">Cancel</button>
@@ -190,7 +190,7 @@ public open(dynamicContent:string = "Example") {
 `;
 
     public componentComponent:string = `
-import {SuiModal, ComponentModalConfig, ModalSize} from "ng2-semantic-ui"
+import {SuiModal, ComponentModalConfig, ModalSize} from "aktis-ng2-semantic-ui"
 
 interface IConfirmModalContext {
     title:string;
@@ -266,7 +266,7 @@ interface IConfirmModalContext {
     template: exampleComponentModalTemplate
 })
 export class ConfirmModalComponent {
-    constructor(public modal:SuiModal<IConfirmModalContext, void, void>) {}
+    constructor(public modal:SuiModal<IConfirmModalContext, void>) {}
 }
 
 export class ConfirmModal extends ComponentModalConfig<IConfirmModalContext, void, void> {

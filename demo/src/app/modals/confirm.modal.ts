@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { SuiModal, ComponentModalConfig, ModalSize } from "ng2-semantic-ui";
+import { SuiModal, ComponentModalConfig, ModalSize } from "aktis-ng2-semantic-ui";
 
 interface IConfirmModalContext {
     question:string;
@@ -9,9 +9,9 @@ interface IConfirmModalContext {
 @Component({
     selector: "demo-modal-confirm",
     template: `
-<div class="header" *ngIf="modal.context.title">{{ modal.context.title }}</div>
+<div class="header" ></div>
 <div class="content">
-    <p>{{ modal.context.question }}</p>
+    <p></p>
 </div>
 <div class="actions">
     <button class="ui red button" (click)="modal.deny(undefined)">Cancel</button>
@@ -20,7 +20,7 @@ interface IConfirmModalContext {
 `
 })
 export class ConfirmModalComponent {
-    constructor(public modal:SuiModal<IConfirmModalContext, void, void>) {}
+    constructor(public modal:SuiModal<IConfirmModalContext, void>) {}
 }
 
 export class ConfirmModal extends ComponentModalConfig<IConfirmModalContext, void, void> {

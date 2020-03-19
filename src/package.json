@@ -1,7 +1,7 @@
 {
-  "name": "ng2-semantic-ui",
-  "version": "0.10.0-alpha.6",
-  "description": "Angular Semantic UI Components",
+  "name": "aktis-ng2-semantic-ui",
+  "version": "0.10.0-alpha.9",
+  "description": "Angular Semantic UI Components forked by Aktis Intelligence",
   "repository": {
     "type": "git",
     "url": "https://github.com/edcarroll/ng2-semantic-ui/tree/master"
